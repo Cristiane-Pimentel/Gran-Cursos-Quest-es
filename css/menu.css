@@ -2,6 +2,10 @@
 	width: 190px;
 }
 
+li.active a {
+	color: #064ff2;
+	font-weight: bold;
+}
 
 .logo, .barra-nav, .menu, .menu-perfil, .barra-nav-perfil, .barra-nav-perfil {
 	display: inline-block;
@@ -117,7 +121,7 @@
 	text-indent: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
 	.barra-nav{
 		background: #ffffff;
 		padding: 1em;
@@ -201,7 +205,7 @@
 	}
 }
 
-@media not all and (max-width: 600px) {
+@media not all and (max-width: 1100px) {
 	.menu-abrir,
 	.menu-fechar,
 	.menu-abrir-perfil,
@@ -215,5 +219,26 @@
 @media (min-width: 1200px){
 	.container {
 		max-width: 1366px;
+	}
+}
+
+@media (max-width: 1325px) and (min-width: 1100px){
+	.logo img{
+		max-width: 180px;
+	}
+	.menu li {
+		padding: 0px;
+	}
+	.menu-perfil {
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 1100px){
+	.menu a{
+		font-size: 0.8em;
+	}
+	.menu-perfil{
+		max-width: 124px;
 	}
 }
