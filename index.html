@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gran Cursos Questões</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=3, user-scalable=yes" />
+	<link rel="icon" href="img/favicon.png">
+
+	<!--LINKS CSS-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="font/all.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/cabecalho.css">
+	<link rel="stylesheet" type="text/css" href="css/filtros.css">
+	<link rel="stylesheet" type="text/css" href="css/questoes.css">
+	<link rel="stylesheet" type="text/css" href="css/formulario.css">
+	<link rel="stylesheet" type="text/css" href="css/perguntas.css">
+</head>
+<body>
+	<!--MENU-->
+	<header>
+		<div class="container menu-principal">
+
+			<button class="menu-abrir">Abre Menu</button>
+			<button class="menu-abrir-perfil"><img src="img/perfil.png" class="img-perfil-btn"></button>
+
+			<h1 class="logo">
+				<img src="img/logo.svg" alt="Logo Gran Cursos Questões" class="img-logo">
+			</h1>
+
+			<nav class="barra-nav">
+
+				<button class="menu-fechar">Fecha Menu</button>
+
+				<ul class="menu">
+					<li><a href="noticias.html" class="noticias">Provas</a></li>
+					<li><a href="esportes.html" class="esportes">Questões para Concursos</a></li>
+					<li><a href="famosos.html" class="famosos">Questões para OAB</a></li>
+					<li><a href="famosos.html" class="famosos">Questões para OAB</a></li>
+					<li><a href="famosos.html" class="famosos">Assuntos Frequentes</a></li>
+				</ul>
+			</nav>
+			<nav class="barra-nav-perfil">
+				<ul class="menu-perfil">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="img/perfil.png" class="img-perfil"> Notícias
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Meu Perfil</a>
+							<a class="dropdown-item" href="#">Meus Marcadores</a>
+							<a class="dropdown-item" href="#">Minhas Anotações</a>
+							<a class="dropdown-item" href="#">Meus Programas</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Meus Pagamentos</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Nossos Professores</a>
+							<a class="dropdown-item" href="#">Ajuda</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Sair</a>
+						</div>
+					</li>
+				</ul>
+				<button class="menu-fechar-perfil">Fecha Menu</button>
+				<ul class="menu-perfil-responsivo">
+					<li><a  href="#">Notícias</a></li>
+					<li><a href="#">Meu Perfil</a></li>
+					<li><a href="#">Meus Marcadores</a></li>
+					<li><a href="#">Minhas Anotações</a></li>
+					<li><a href="#">Meus Programas</a></li>
+					<li><a href="#">Meus Pagamentos</a></li>
+					<li><a href="#">Nossos Professores</a></li>
+					<li><a href="#">Ajuda</a></li>
+					<li><a href="#" class="sair"><i class="fas fa-sign-out-alt"></i>Sair</a></li>
+				</li>
+			</ul>
+
+		</nav>
+
+	</div>
+
+</header>
+<!--MENU-->
+<!--CABEÇALHO-->
+<section class="cabecalho">
+	<div class="container">
+		<div class="menu-links">
+			<span>Home</span>
+			<span>Questões</span>
+			<span>Concusos Públicos</span>
+		</div>
+		<h4>Questões para Concursos</h4>
+	</div>
+</section>
+<!--CABEÇALHO-->
+<!--FILTROS-->
+<section class="filtros">
+	<div class="container">
+		<div class="row filtros-salvos">
+			<h6>Filtros</h6>
+			<div class="dropdown">
+				<a class="dropdown-filtros-salvos" id="dropdownFiltrosSalvos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Filtros Salvos
+					<span class="arrow-down"></span>
+				</a>
+				<div class="dropdown-menu dropdown-filtros dropdown-menu-right" aria-labelledby="dropdownFiltrosSalvos">
+					<a class="dropdown-item dropdown-filtros-item" type="button">
+						<form class="busca">
+							<input type="text" id="campo-busca">
+							<button type="submit" class="lupa-btn"><i class="fas fa-search lupa"></i></button>
+						</form>
+					</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item dropdown-filtros-item" type="button">
+						Nenhum resultado encontrado.
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--FILTROS-->
+<!--FILTROS-->
+<section class="questoes">
+	<div class="container">
+		<h6>Minhas questões</h6>
+		<div class="row">
+			<!---->
+			<div class="label-minhas-questoes">
+				<label class="switch" for="todas">
+					<input type="radio" id="todas" name='group'>
+					<span class="slider round"></span>
+				</label>
+				<label for="todas">Todas</label>
+			</div>
+			<!---->
+			<!---->
+			<div class="label-minhas-questoes">
+				<label class="switch" for="jaResolvi">
+					<input type="radio" id="jaResolvi" name='group'>
+					<span class="slider round"></span>
+				</label>
+				<label for="jaResolvi">Já Resolvi</label>
+			</div>
+			<!---->
+			<!---->
+			<div class="label-minhas-questoes">
+				<label class="switch" for="naoResolvi">
+					<input type="radio" id="naoResolvi" name='group'>
+					<span class="slider round"></span>
+				</label>
+				<label for="jaResolvi">Não Resolvi</label>
+			</div>
+			<!---->
+			<!---->
+			<div class="label-minhas-questoes">
+				<label class="switch" for="acertei">
+					<input type="radio" id="acertei" name='group'>
+					<span class="slider round"></span>
+				</label>
+				<label for="acertei">Acertei</label>
+			</div>
+			<!---->
+			<!---->
+			<div class="label-minhas-questoes">
+				<label class="switch" for="errei">
+					<input type="radio" id="errei" name='group'>
+					<span class="slider round"></span>
+				</label>
+				<label for="errei">Errei</label>
+			</div>
+			<!---->
+			<!---->
+		</div>
+	</div>
+</div>
+</section>
+<!--FILTROS-->
+<!--FORMULARIO-->
+<section class="formulario">
+	<div class="container">
+		<form>
+			<div class="input-group mb-2">
+				<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Digite para buscar disciplinas e assuntos">
+				<div class="input-group-prepend">
+					<button type="submit" class="btn-busca"><i class="fas fa-search"></i></button>
+				</div>
+			</div>
+		</form>
+		<div class="row">
+			<div class="col-md-4">
+				<form>
+					<select class="selectpicker dropdown" data-live-search="true" data-width="100%" multiple data-actions-box="true" title="Banca" data-style="banca">
+						<option data-tokens="ACADEPOL - MG - Academia de Polícia Civil de Minas Gerais - ACADEPOL - MG">ACADEPOL - MG - Academia de Polícia Civil de Minas Gerais - ACADEPOL - MG</option>
+						<option data-tokens="ACAFE - Associação Catarinense das Fundações Educacionais  - ACAFE">ACAFE - Associação Catarinense das Fundações Educacionais  - ACAFE</option>
+						<option data-tokens="ACAPLAM Consultoria e Assessoria Técnica e Estados e Municípios">ACAPLAM Consultoria e Assessoria Técnica e Estados e Municípios</option>
+						<option data-tokens="ACEP - Associação Catarinense de Estudos e Pesquisas - ACEP">ACEP - Associação Catarinense de Estudos e Pesquisas - ACEP</option>
+						<option data-tokens="ACP Informática">ACP Informática</option>
+						<option data-tokens="ACPM - RJ - ACPMRJ">ACPM - RJ - ACPMRJ</option>
+						<option data-tokens="ADM&TEC - Instituto de Administração e Tecnologia - ADM&TEC">ADM&TEC - Instituto de Administração e Tecnologia - ADM&TEC</option>
+						<option data-tokens="ADVISE">ADVISE</option>
+						<option data-tokens="AEDB - Associação Educacional Dom Bosco - AEDB">AEDB - Associação Educacional Dom Bosco - AEDB</option>
+						<option data-tokens="Alternative Concursos">Alternative Concursos</option>
+						<option data-tokens="AMAUC - Associação dos Municípios do Alto Uruguai Catarinense - AMAUC">AMAUC - Associação dos Municípios do Alto Uruguai Catarinense - AMAUC</option>
+						<option data-tokens="AMAZUL">AMAZUL</option>
+						<option data-tokens="AMEOSC">AMEOSC</option>
+						<option data-tokens="Antares">Antares</option>
+						<option data-tokens="AOCP - Assessoria em Organização de Concursos Públicos - AOCP">AOCP - Assessoria em Organização de Concursos Públicos - AOCP</option>
+						<option data-tokens="APROJEPLAM">APROJEPLAM</option>
+						<option data-tokens="ARES-Apoio às residências em saúde - ARES">ARES-Apoio às residências em saúde - ARES</option>
+						<option data-tokens="ASPERHS - Cosultoria">ASPERHS - Cosultoria</option>
+						<option data-tokens="ASSCON-PP">ASSCON-PP</option>
+						<option data-tokens="Assessoria, Consultoria Contábil, Previdenciária e Gestão de Pessoas - ASCONPREV - ASCONPREV">Assessoria, Consultoria Contábil, Previdenciária e Gestão de Pessoas - ASCONPREV - ASCONPREV</option>
+					</select>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<form>
+					<select class="selectpicker dropdown" data-live-search="true" data-width="100%" multiple data-actions-box="true" title="Órgão" data-style="banca">
+						<option data-tokens="Advocacia Geral do Estado de Minas Gerais - AGE - MG">Advocacia Geral do Estado de Minas Gerais - AGE - MG</option>              
+						<option data-tokens="Advocacia-Geral da União  - AGU - BR">Advocacia-Geral da União  - AGU - BR</option>
+						<option data-tokens="Agência Brasileira de Desenvolvimento Industrial  - ABDI - BR">Agência Brasileira de Desenvolvimento Industrial  - ABDI - BR</option>
+						<option data-tokens="Agência Brasileira de Inteligência  - ABIN - BR">Agência Brasileira de Inteligência  - ABIN - BR</option>
+						<option data-tokens="Agência de Defesa Agropecuária do Ceará - ADAGRI - ADAGRI - CE">Agência de Defesa Agropecuária do Ceará - ADAGRI - ADAGRI - CE</option>
+						<option data-tokens="Agência de Defesa Agropecuária do Pará - ADEPARÁ - ADEPARÁ - PA">Agência de Defesa Agropecuária do Pará - ADEPARÁ - ADEPARÁ - PA</option>
+						<option data-tokens="Agência de Defesa Agropecuária do Paraná - ADAPAR - ADAPAR - PR">Agência de Defesa Agropecuária do Paraná - ADAPAR - ADAPAR - PR</option>
+						<option data-tokens="Agência de Defesa Agropecuária do Piauí - ADAPI - ADAPI - PI">Agência de Defesa Agropecuária do Piauí - ADAPI - ADAPI - PI</option>
+						<option data-tokens="Agência de Defesa Agropecuária e Florestal do Amazonas - ADAF - AM">Agência de Defesa Agropecuária e Florestal do Amazonas - ADAF - AM</option>
+						<option data-tokens="Agência de Defesa e Fiscalização Agropecuária de Pernambuco - ADAGRO - ADAGRO - PE">Agência de Defesa e Fiscalização Agropecuária de Pernambuco - ADAGRO - ADAGRO - PE</option>
+						<option data-tokens="Agência de Fomento da Bahia - Desenbahia - BA">Agência de Fomento da Bahia - Desenbahia - BA</option>
+						<option data-tokens="Agência de Fomento de Santa Catarina  - BADESC - SC">Agência de Fomento de Santa Catarina  - BADESC - SC</option>
+						<option data-tokens="Agência de Fomento de São Paulo S.A - Desenvolve - SP">Agência de Fomento de São Paulo S.A - Desenvolve - SP</option>
+						<option data-tokens="Agência de Fomento do Amapá - AFAP - AP">Agência de Fomento do Amapá - AFAP - AP</option>
+						<option data-tokens="Agência de Fomento do Paraná - PR">Agência de Fomento do Paraná - PR</option>
+						<option data-tokens="Agência de Fomento do Rio de Janeiro - AFERJ/INVESTERIO - RJ">Agência de Fomento do Rio de Janeiro - AFERJ/INVESTERIO - RJ</option>
+						<option data-tokens="Agência de Promoção de Exportações e Investimentos  - APEX Brasil - BR">Agência de Promoção de Exportações e Investimentos  - APEX Brasil - BR</option>
+						<option data-tokens="Agência de Regulação de Controle de Serviços Públicos do Estado do Pará - ARCON - PA">Agência de Regulação de Controle de Serviços Públicos do Estado do Pará - ARCON - PA</option>
+						<option data-tokens="Agência de Serviços Públicos de Energia do Espírito Santo  - ASPE - ES">Agência de Serviços Públicos de Energia do Espírito Santo  - ASPE - ES</option>
+						<option data-tokens="Agência Estadual de Administração do Sistema Penitenciário do Mato Grosso do Sul  - AGEPEN - MS">Agência Estadual de Administração do Sistema Penitenciário do Mato Grosso do Sul  - AGEPEN - MS</option>
+						<option data-tokens="Agência Estadual de Defesa Agropecuária do Maranhão - AGED - MA">Agência Estadual de Defesa Agropecuária do Maranhão - AGED - MA</option>
+						<option data-tokens="Agência Estadual de Meio Ambiente e Recursos Hídricos de Pernambuco  - CPRH - PE">Agência Estadual de Meio Ambiente e Recursos Hídricos de Pernambuco  - CPRH - PE</option>
+						<option data-tokens="Agência Estadual de Regulação de Serviços Públicos de Energia, Transportes e Comunicações da Bahia - AGERBA - BA">Agência Estadual de Regulação de Serviços Públicos de Energia, Transportes e Comunicações da Bahia - AGERBA - BA</option>
+						<option data-tokens="Agência Estadual de Tecnologia da Informação de Pernambuco  - ATI - PE">Agência Estadual de Tecnologia da Informação de Pernambuco  - ATI - PE</option>
+						<option data-tokens="Agência Goiana de Administração e Negócios Públicos  - AGANP - GO">Agência Goiana de Administração e Negócios Públicos  - AGANP - GO</option>
+						<option data-tokens="Agência Goiana de Comunicação  - AGECOM - GO">Agência Goiana de Comunicação  - AGECOM - GO</option>
+						<option data-tokens="Agência Goiana de Habitação S/A  - AGEHAB - GO">Agência Goiana de Habitação S/A  - AGEHAB - GO</option>
+						<option data-tokens="Agência Nacional de Águas  - ANA - BR">Agência Nacional de Águas  - ANA - BR</option>
+						<option data-tokens="Agência Nacional de Aviação Civil  - ANAC - BR">Agência Nacional de Aviação Civil  - ANAC - BR</option>
+						<option data-tokens="Agência Nacional de Energia Elétrica  - ANEEL - BR">Agência Nacional de Energia Elétrica  - ANEEL - BR</option>
+						<option data-tokens="Agência Nacional de Saúde Suplementar  - ANS - BR">Agência Nacional de Saúde Suplementar  - ANS - BR</option>
+						<option data-tokens="Agência Nacional de Telecomunicações  - ANATEL - BR">Agência Nacional de Telecomunicações  - ANATEL - BR</option>
+						<option data-tokens="Agência Nacional de Transportes Aquaviários  - ANTAQ - BR">Agência Nacional de Transportes Aquaviários  - ANTAQ - BR</option>
+						<option data-tokens="Agência Nacional de Transportes Terrestres  - ANTT - BR">Agência Nacional de Transportes Terrestres  - ANTT - BR</option>
+						<option data-tokens="Agência Nacional de Vigilância Sanitária  - ANVISA - BR">Agência Nacional de Vigilância Sanitária  - ANVISA - BR</option>
+						<option data-tokens="Agência Nacional do Cinema  - ANCINE - BR">Agência Nacional do Cinema  - ANCINE - BR</option>
+						<option data-tokens="Agência Nacional do Petróleo, Gás Natural e Biocombustíveis  - ANP - BR">Agência Nacional do Petróleo, Gás Natural e Biocombustíveis  - ANP - BR</option>
+					</select>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<form>
+					<select class="selectpicker dropdown" data-live-search="true" data-width="100%" multiple data-actions-box="true" title="Ano" data-style="banca">
+						<option data-tokens="2020">2020</option>
+						<option data-tokens="2019">2019</option>
+						<option data-tokens="2018">2018</option>
+						<option data-tokens="2017">2017</option>
+						<option data-tokens="2016">2016</option>
+						<option data-tokens="2015">2015</option>
+						<option data-tokens="2014">2014</option>
+						<option data-tokens="2013">2013</option>
+						<option data-tokens="2012">2012</option>
+						<option data-tokens="2011">2011</option>
+						<option data-tokens="2010">2010</option>
+						<option data-tokens="2009">2009</option>
+						<option data-tokens="2008">2008</option>
+						<option data-tokens="2007">2007</option>
+						<option data-tokens="2006">2006</option>
+						<option data-tokens="2005">2005</option>
+						<option data-tokens="2004">2004</option>
+						<option data-tokens="2003">2003</option>
+						<option data-tokens="2002">2002</option>
+						<option data-tokens="2001">2001</option>
+						<option data-tokens="2000">2000</option>
+					</select>
+				</form>
+			</div>
+		</div>
+		<div class="row forms">
+			<div class="col-md-4">
+				<form>
+					<select class="selectpicker dropdown" data-live-search="true" data-width="100%" multiple data-actions-box="true" title="Cargo" data-style="banca">
+						<option data-tokens="1° Tenente - Área: Dermatologia">1° Tenente - Área: Dermatologia</option>
+						<option data-tokens="1° Tenente - Área: Endoscopia Digestiva">1° Tenente - Área: Endoscopia Digestiva</option>
+						<option data-tokens="1° Tenente - Área: Enfermagem Geral">1° Tenente - Área: Enfermagem Geral</option>
+						<option data-tokens="1° Tenente - Área: Enfermagem/Terapia Intensiva de Adulto">1° Tenente - Área: Enfermagem/Terapia Intensiva de Adulto</option>
+						<option data-tokens="1° Tenente - Área: Enfermagem/Terapia Intensiva Neonatal">1° Tenente - Área: Enfermagem/Terapia Intensiva Neonatal</option>
+						<option data-tokens="1° Tenente - Área: Fisiatria">1° Tenente - Área: Fisiatria</option>
+						<option data-tokens="1° Tenente - Área: Fisioterapia Neurológica">1° Tenente - Área: Fisioterapia Neurológica</option>
+						<option data-tokens="1° Tenente - Área: Fisioterapia Pediátrica e Neonatal">1° Tenente - Área: Fisioterapia Pediátrica e Neonatal</option>
+						<option data-tokens="1° Tenente - Área: Fisioterapia Traumato Ortopédica">1° Tenente - Área: Fisioterapia Traumato Ortopédica</option>
+						<option data-tokens="1° Tenente - Área: Fonoaudiologia">1° Tenente - Área: Fonoaudiologia</option>
+						<option data-tokens="1° Tenente - Área: Gastroenterologia">1° Tenente - Área: Gastroenterologia</option>
+						<option data-tokens="1° Tenente - Área: Ginecologia">1° Tenente - Área: Ginecologia</option>
+						<option data-tokens="1° Tenente - Área: Hemodinâmica">1° Tenente - Área: Hemodinâmica</option>
+						<option data-tokens="1° Tenente - Área: Hemoterapia">1° Tenente - Área: Hemoterapia</option>
+					</select>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<form>
+					<select class="selectpicker dropdown" data-live-search="true" data-width="100%" multiple data-actions-box="true" title="Nível" data-style="banca">
+						<option data-tokens="Superior">Superior</option>
+						<option data-tokens="Médio">Médio</option>
+						<option data-tokens="Fundamental">Fundamental</option>
+					</select>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<form>
+					<select class="selectpicker dropdown" data-live-search="true" data-width="100%" multiple data-actions-box="true" title="Tipo de Questão" data-style="banca">
+						<option data-tokens="Superior">Certo e Errado</option>
+						<option data-tokens="Médio">Multipla Escolha</option>
+					</select>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!--FORMULARIO-->
+<!--ESCLUIR QUESTOES-->
+<section class="excluir-questoes">
+	<div class="container">
+		<h6>Excluir questões</h6>
+		<div class="row">
+			<!---->
+			<div class="label-minhas-questoes">
+				<label class="switch" for="anuladas">
+					<input type="radio" id="anuladas">
+					<span class="slider round"></span>
+				</label>
+				<label for="anuladas">Anuladas</label>
+			</div>
+			<!---->
+			<!---->
+			<div class="label-minhas-questoes">
+				<label class="switch" for="desatualizadas">
+					<input type="radio" id="desatualizadas">
+					<span class="slider round"></span>
+				</label>
+				<label for="desatualizadas">Desatualizadas</label>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h6>Comentários</h6>
+		<div class="row">
+			<!---->
+			<div class="label-minhas-questoes">
+				<label class="switch" for="comentariosProfessor">
+					<input type="radio" id="comentariosProfessor">
+					<span class="slider round"></span>
+				</label>
+				<label for="comentariosProfessor">Comentários do professor</label>
+			</div>
+			<!---->
+			<!---->
+			<div class="label-minhas-questoes">
+				<label class="switch" for="comentariosAlunos">
+					<input type="radio" id="comentariosAlunos">
+					<span class="slider round"></span>
+				</label>
+				<label for="comentariosAlunos<">Comentários dos alunos</label>
+			</div>
+			<!---->
+			<div class="label-minhas-questoes">
+				<label class="switch" for="meusComentarios">
+					<input type="radio" id="meusComentarios">
+					<span class="slider round"></span>
+				</label>
+				<label for="meusComentarios">Meus comentários</label>
+			</div>
+		</div>
+	</div>
+</section>
+<!--ESCLUIR QUESTOES-->
+<!--PERGUNTAS-->
+<section class="perguntas">
+	<div class="container">
+		<div class="row simulado">
+			<div class="row detalhes">
+				<p class="questoes-encontradas">1.127.361 questões encontradas</p>
+				<div class="btn-tamanhodasLetras">
+					<button onClick="fonte('a');" class="btn-tamanhoLetra">A+</button>
+					<button onClick="fonte('d');" class="btn-tamanhoLetra">A-</button>
+				</div>
+			</div>
+			<div>
+				<button type="button" class="btn btn-primary">+ Gerar Simulado</button>
+			</div>
+		</div>
+		<div class="row cabecalho-perguntas">
+			<div class="numero">
+				1
+			</div>
+			<p>Q1296030</p>
+			<p>Pedagogia</p>
+		</div>
+		<div class="row dados-perguntas">
+			<p><b>Ano:</b> 2020</p>
+			<p><b>Banca:</b> VUNESP</p>
+			<p><b>Órgão:</b> Prefeitura de Cananéia</p>
+			<p><b>UF:</b> SP</p>
+			<p><b>Cargo:</b> Professor - Área: Educação Especial</p>
+		</div>
+		<div class="row questions">
+			<div class="quiz">
+				<form class="quiz-form">
+					<div class="quiz-form__quiz">
+						<p class="acessibilidade">
+							Os alunos público alvo da educação especial têm direito à matrícula em um sistema de ensino inclusivo e ao Atendimento Educacional Especializado (AEE). A Resolução CNE/CEB 4/2009 determina que o AEE tem como função complementar ou suplementar a formação do aluno por meio da disponibilização de
+						</p>
+						<label class="quiz-form__ans" for="q11">
+							<input type="radio" name="q1" id="q11" value="A" checked class="question">
+							<span class="design"></span>
+							<span class="text acessibilidade">sistemas de apoio especializado para acesso ao currículo e aos diferentes equipamentos escolares, bem como participação nos eventos escolares</span>
+						</label>
+						<label class="quiz-form__ans" for="q12">
+							<input type="radio" name="q1" id="q12" value="B" class="question">
+							<span class="design"></span>
+							<span class="text acessibilidade">recursos de acessibilidade que possibilitem a plena participação em igualdade com os demais alunos em sala especial.</span>
+						</label>
+						<label class="quiz-form__ans" for="q13">
+							<input type="radio" name="q1" id="q13" value="C" class="question">
+							<span class="design"></span>
+							<span class="text acessibilidade">profissionais de apoio para orientação e mobilidade, alimentação e higiene, recursos de acessibilidade e produtos e técnicas para acesso ao currículo.</span>
+						</label>
+						<label class="quiz-form__ans" for="q14">
+							<input type="radio" name="q1" id="q14" value="D" class="question">
+							<span class="design"></span>
+							<span class="text acessibilidade">serviços, recursos de acessibilidade e estratégias que eliminem as barreiras para sua plena participação na sociedade e desenvolvimento de sua aprendizagem.</span>
+						</label>
+						<label class="quiz-form__ans" for="q15">
+							<input type="radio" name="q1" id="q15" value="E" class="question">
+							<span class="design"></span>
+							<span class="text acessibilidade">estratégias e recursos de acessibilidade, técnicas para acesso ao currículo, profissional intérprete, recursos de tecnologia</span>
+						</label>
+					</div>
+					<input class="submit" type="submit" value="Responder">
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!--PERGUNTAS-->
+<!--RODAPE-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/bootstrap-select.js"></script>
+<script src="js/menu.js" type="text/javascript"></script>
+<script src="js/fonte.js" type="text/javascript"></script>
+<script src="js/quiz.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$('.dropdown-filtros-salvos').click(function(){
+		$(this).children('span').toggleClass('arrow-down arrow-up')
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+.formulario{
+	margin: 25px;
+}
+
+.btn-busca{
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: .375rem .75rem;
+	margin-bottom: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #edf1f2;
+	text-align: center;
+	white-space: nowrap;
+	background-color: #0052cc;
+	border-radius: 0 .25rem .25rem 0;
+	box-sizing: border-box;
+	min-width: 47px;
+}
+
+.banca{
+	display: flex;
+	align-items: center;
+	padding: 12px 14px;
+	cursor: pointer;
+	outline: none;
+	justify-content: space-between;
+	height: 102%;
+	border: 1px solid #e5e9f2;
+	border-radius: 4px;
+	height: 44px;
+}
+
+.banca:focus, .banca:hover, .banca:active{
+	outline: 0;
+	box-shadow: inset 0 -1px 0 #ddd;
+}
+
+.bootstrap-select .dropdown-toggle:focus{
+	outline: 0!important;
+}
+
+.form-control{
+	height: 44px;
+}
+
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark {
+	position: relative;
+	top: 0;
+}
+
+.bootstrap-select .dropdown-menu li a span.check-mark:before {
+	display: inline-block;
+	background-color: #e0e6ed;
+	border: 1px solid #e0e6ed;
+	padding: 0 4px;
+	margin-right: 10px;
+	border-width: 0;
+	color: transparent;
+}
+
+.span.bs-ok-default.check-mark:after{
+	content: '✓'!important;
+	color: black;
+	padding: 0 4px;
+	background-color: blue;
+}
+
+.bootstrap-select .bs-ok-default:after{
+	border-width: 0 0.20em 0.20em 0;
+	color: #0052cc;
+}
+
+.dropdown-item{
+	font-size: 0.9em;
+}
+
+
+.forms{
+	margin-top: 15px;
+}

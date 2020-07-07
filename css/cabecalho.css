@@ -1,0 +1,24 @@
+.cabecalho{
+	background-color: #1f2d3d;
+	padding: 35px;
+}
+
+.cabecalho h4{
+	color: #ffffff;
+}
+
+.cabecalho span:before{
+	content: "/";
+    display: inline-block;
+    margin: 0 5px;
+    color: #93acc8;
+}
+
+.cabecalho span{
+	color: #ffffff;
+	font-size: 0.8em;
+}
+
+.menu-links{
+	margin-bottom: 20px;
+}
