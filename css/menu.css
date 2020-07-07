@@ -213,6 +213,16 @@ li.active a {
 	.menu-perfil-responsivo {
 		display: none;
 	}
+	.container.menu-principal{
+		display: flex;
+		justify-content: space-between;
+	}
+	.barra-nav {
+		margin: 1.4em 0;
+	}
+	.menu-perfil {
+		padding-left: 0;
+	}
 }
 
 
